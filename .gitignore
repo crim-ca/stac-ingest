@@ -1,0 +1,6 @@
+output/
+__pycache__/
+.env
+.idea/
+tmp/
+tds_cache.json

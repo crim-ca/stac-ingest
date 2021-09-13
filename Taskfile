@@ -1,0 +1,13 @@
+#!/bin/bash
+
+function default {
+    help
+}
+
+function help {
+    echo "Stac ingestion utility tool"
+    compgen -A function | grep -v help | grep -v default | cat -n
+}
+
+TIMEFORMAT="Task completed in %3lR"
+time ${@:-default}
